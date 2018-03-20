@@ -68,7 +68,11 @@ int CheckSteamEncryptedAppTicket(
 	return 0;	
 }
 
-CSteamAPIContext myContext;
+int RgubKeyLength() {
+	return k_nSteamEncryptedAppTicketSymmetricKeyLen;
+}
+
+//CSteamAPIContext myContext;
 
 int SteamInit() {
 	//myContext.Init();
@@ -85,10 +89,6 @@ int SteamInit() {
 		GoLog(b);
 	}
 	return 0;*/
-}
-
-int RgubKeyLength() {
-	return k_nSteamEncryptedAppTicketSymmetricKeyLen;
 }
 
 int SteamIsSteamRunning() {

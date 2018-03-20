@@ -31,7 +31,7 @@ var (
 func init() {
 	rlength, err := C.RgubKeyLength()
 	if err != nil {
-		panic("k_nSteamEncryptedAppTicketSymmetricKeyLen retrieval failed")
+		panic("k_nSteamEncryptedAppTicketSymmetricKeyLen retrieval failed: " + err.Error())
 	}
 	rgubExpectedLength = int(rlength)
 }

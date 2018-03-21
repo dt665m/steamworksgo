@@ -49,6 +49,7 @@ int CheckSteamEncryptedAppTicket(
 	if ( timeNow - issueTime > expiryToleranceSeconds ) {
 		printf("ticket issue time: %d\n", issueTime);
 		printf("ticket elapsed seconds: %d\n", timeNow - issueTime);
+		printf("ticket tolerance %d\n", expiryToleranceSeconds);
 		return 3;
 	}
 	

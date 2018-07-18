@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	sw "github.com/blazingorb/steamworksgo"
+	sw "github.com/dt665m/steamworksgo"
 )
 
 func main() {
